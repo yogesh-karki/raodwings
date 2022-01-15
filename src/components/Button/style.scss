@@ -1,0 +1,63 @@
+$darkBg : #151514;
+$orange: #da571f;
+
+.btn {
+
+    &:hover {
+        svg {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+
+    svg {
+        width: 80px;
+
+
+        path {
+            fill: none;
+            stroke: $orange;
+            stroke-width: 3px;
+            transition: 0.5s;
+        }
+
+    }
+}
+
+.play-btn {
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        svg {
+            transform: rotate(90deg);
+
+            path {
+                
+                fill: $orange;
+            }
+
+            polygon {
+                stroke: #fff;
+                fill: #fff;
+                transform: translate(0px, 100%) rotate(-88deg);
+            }
+        }
+    }
+
+    svg {
+        width: 80px;
+        transition: 0.3s;
+
+        path , polygon {
+            fill: none;
+            stroke: $orange;
+            stroke-width: 2px;
+   
+        
+        }
+
+
+    }
+}

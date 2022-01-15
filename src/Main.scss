@@ -1,0 +1,130 @@
+$darkBg : #151514;
+$orange: #da571f;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neusa';
+}
+
+h1 {
+    font-size: 7.2rem;
+    line-height: 0.93;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+}
+
+h2 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 0;
+  
+}
+
+h1,h2 {
+    word-spacing:  -10px;
+
+    span {
+        background: linear-gradient(to bottom, #f6921e, #d71921);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+h5,h6 {
+    font-weight: 500;
+}
+
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+.main-container {
+    background: $darkBg;
+    color: #fff;
+
+
+    aside {
+        height: 100vh;
+        width: 120px;
+        // border-right: 1px solid #CBC8CF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $darkBg;
+
+        .logo {
+            padding-top: 60px;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .menu {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            padding-bottom: 60px;
+
+            &:hover {
+                .dots {
+                    transform: scale(1.2 ) rotate(90deg);
+                }
+
+                span {
+                    margin: 2px;
+                    width: 3px;
+                    height: 3px;
+                }
+            }
+
+
+            .dots {
+                width: 25px;
+                height: 25px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                transition: all 0.3s;
+                position: absolute;
+            }
+
+            span {
+                
+                height: 4px;
+                background: #da571f;
+                display: block;
+                width: 4px;
+                margin: 1.5px ;
+            }
+        }
+
+
+    }
+
+    main {
+        width: calc(100% - 120px);
+        margin-left: 120px;
+        min-height: 100vh;
+        // padding: 80px;
+    }
+} 

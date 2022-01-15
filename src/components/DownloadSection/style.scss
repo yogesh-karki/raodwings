@@ -1,0 +1,41 @@
+$darkBg : #151514;
+$orange: #da571f;
+
+.download {
+    padding: 120px 0;
+    text-align: center;
+    background-color: $orange;
+
+    h2 {
+        text-transform: uppercase;
+
+        span {
+            -webkit-text-fill-color: #fff;
+            background: transparent;
+        }
+    }
+
+    .btn {
+        background-color: #fff;
+        display: inline-flex;
+        width: 200px;
+        margin-top: 30px;
+        border-radius: 30px;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 30px;
+            margin-right: 8px;
+        }
+
+        h5 {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #151514;
+
+        }
+    }
+
+}
