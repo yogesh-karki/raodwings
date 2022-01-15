@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-DemiBold.woff2') format('woff2'),
+        url('Neusa-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Black.woff2') format('woff2'),
+        url('Neusa-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Bold.woff2') format('woff2'),
+        url('Neusa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Medium.woff2') format('woff2'),
+        url('Neusa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-ExtraBold.woff2') format('woff2'),
+        url('Neusa-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Light.woff2') format('woff2'),
+        url('Neusa-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-SemiBold.woff2') format('woff2'),
+        url('Neusa-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Black.woff2') format('woff2'),
+        url('Neusa-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Regular.woff2') format('woff2'),
+        url('Neusa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-DemiBold.woff2') format('woff2'),
+        url('Neusa-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Bold.woff2') format('woff2'),
+        url('Neusa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-ExtraBold.woff2') format('woff2'),
+        url('Neusa-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Light.woff2') format('woff2'),
+        url('Neusa-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-SemiBold.woff2') format('woff2'),
+        url('Neusa-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Medium.woff2') format('woff2'),
+        url('Neusa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neusa';
+    src: url('Neusa-Regular.woff2') format('woff2'),
+        url('Neusa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

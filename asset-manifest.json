@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/roadwings/static/css/main.65f99b84.css",
+    "main.js": "/roadwings/static/js/main.cb94908b.js",
+    "index.html": "/roadwings/index.html",
+    "main.65f99b84.css.map": "/roadwings/static/css/main.65f99b84.css.map",
+    "main.cb94908b.js.map": "/roadwings/static/js/main.cb94908b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65f99b84.css",
+    "static/js/main.cb94908b.js"
+  ]
+}
