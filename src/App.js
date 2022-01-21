@@ -23,7 +23,7 @@ let menuOpen = () => {
 
 }
 
-let menuItems = ["Home", "Shop", "Sign up"]
+let menuItems = ["Home","About us" , "Shop", "Sign up"]
 
 
 
@@ -62,6 +62,13 @@ let menuItems = ["Home", "Shop", "Sign up"]
       </main>
 
       <section className={menuBox == true ? 'menuBox active' : 'menuBox'}>
+            <div className="bg">
+              <h1>ROADWINGS</h1>
+              <h1>ROADWINGS</h1>
+              <h1>ROADWINGS</h1>
+              <h1>ROADWINGS</h1>
+            </div>
+
         <ul>
           {
             menuItems.map((data, index) => {

@@ -163,6 +163,23 @@ p {
         transform: translateX(0);
     }
 
+    .bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.3;
+        
+        z-index: -1;
+
+        h1 {
+            color: #d71921;
+            
+            font-weight: 600;
+            font-size: 18rem;
+        }
+    }
+
     ul {    
 
         height: 100%;
@@ -201,7 +218,7 @@ p {
         z-index: 9;
         position: relative;
         flex-direction: row;
-        padding: 5px 20px;
+        padding: 5px 0px;
     }
 
     .main-container main {
@@ -211,6 +228,7 @@ p {
 
     .main-container aside .logo {
         padding-top: 0;
+        padding-left: 10px;
     }
 
     .main-container aside .menu {

@@ -50,3 +50,9 @@ $orange: #da571f;
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .shop {
+        padding: 80px 0;
+    }
+}
