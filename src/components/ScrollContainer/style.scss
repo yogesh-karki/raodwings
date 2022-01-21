@@ -1,14 +1,15 @@
 $darkBg : #151514;
 $orange: #da571f;
 
+
 .service-container {
+
     .content {
         height: 100vh;
         padding: 60px;
         display: flex;
         align-items: center;
         position: relative;
-        overflow: hidden;
 
         // &:nth-child(odd) {
         //     background: $orange;
@@ -65,7 +66,7 @@ $orange: #da571f;
         .video, picture {
             position: absolute;
             width: 70%;
-            top: 60px;
+            top: 0px;
             left: 30%;
             height: 100%;
             overflow: hidden;
@@ -91,5 +92,25 @@ $orange: #da571f;
         
         }
 
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .service-container .content {
+        height: auto;
+        display: block;
+        padding: 10px
+    }
+
+    .service-container .content .text {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    .service-container .content .video, .service-container .content picture {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        left: 0;
     }
 }

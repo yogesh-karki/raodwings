@@ -8,6 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
+
+
+
 const ScrollContainer = () => {
     const serviceData = [
         {   
@@ -43,43 +46,52 @@ const ScrollContainer = () => {
     }
 
 
+
+   
+ 
+
     return (
-        <section className="service-container" ref={container}>
-        
-
-
-            {
-                serviceData.map((val,index)=> {
-                    return(
-                        <div className="content" key={index}>
-                            <div className="text">
-                                <div className="count">
-                                    <span>{count(index + 1)}</span><span> / { count(serviceData.length)}</span>
+        <>
+                <div className="service-container">
+                {
+                    serviceData.map((val,index)=> {
+                        return(
+                            <div className="content" key={index}>
+                                <div className="text">
+                                    <div className="count">
+                                        <span>{count(index + 1)}</span><span> / { count(serviceData.length)}</span>
+                                    </div>
+                                    <h2>{val.title} <span>{val.titleSpan}</span> </h2>
+                                    <p>{val.text}</p>
                                 </div>
-                                <h2>{val.title} <span>{val.titleSpan}</span> </h2>
-                                <p>{val.text}</p>
+
+                                <div className="video">
+                                    {
+                                        ( val.img ) 
+                                        ? <picture><img src= {val.img} alt="" /> </picture>
+                                        :   <video poster="" autoPlay="autoPlay" playsInline="playsInline" muted="muted" loop="loop">
+                                                <source src={val.video} type="video/mp4" />
+                                            </video> 
+                                    }
+
+                                    
+
+                                    
+                                </div>
                             </div>
+                            
+                        )
+                    })
+                }
 
-                            <div className="video">
-                                {
-                                    ( val.img ) 
-                                    ? <picture><img src= {val.img} alt="" /> </picture>
-                                    :   <video poster="" autoPlay="autoPlay" playsInline="playsInline" muted="muted" loop="loop">
-                                            <source src={val.video} type="video/mp4" />
-                                        </video> 
-                                }
+                 
+                
+                </div>
 
-                                
 
-                                
-                            </div>
-                        </div>
-                        
-                    )
-                })
-            }
-
-        </section>
+    
+          
+        </>
     )
 }
 

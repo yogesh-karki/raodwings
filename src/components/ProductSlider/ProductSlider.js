@@ -39,10 +39,24 @@ const ProductSlider = () => {
             <p> Online shop and wholesaler, serving a global customer base</p>
 
             <Swiper
-                spaceBetween={30}
-                slidesPerView={4}
+            
                 loop={true}
                 className='product-slides'
+                breakpoints={{
+                    "640": {
+                        "slidesPerView": 1,
+                        "spaceBetween": 10,
+                        "loop" : false,
+                    },
+                    "768": {
+                        "slidesPerView": 2,
+                        "spaceBetween": 20
+                    },
+                    "1024": {
+                        "slidesPerView": 4,
+                        "spaceBetween": 30
+                    }
+                }}
             >
                 {
                     swiperData.map((val,index) => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 
 // import 'antd/dist/antd.css';
 import './Main.scss';
@@ -8,9 +8,26 @@ import ScrollContainer from './components/ScrollContainer/ScrollContainer';
 import DownloadSection from './components/DownloadSection/DownloadSection';
 import ProductSlider from './components/ProductSlider/ProductSlider';
 
+
 function App() {
 
 let n = 9;
+let [menuBox, setMenuBox] = useState(false)
+let [dots, setDots] = useState(false)
+
+menuBox ? document.body.style.overflow = "hidden" : document.body.style.overflow = "visible"
+
+let menuOpen = () => {
+  setMenuBox(!menuBox)
+  setDots(!dots)
+
+}
+
+let menuItems = ["Home", "Shop", "Sign up"]
+
+
+
+
 
 
   return (
@@ -22,9 +39,9 @@ let n = 9;
           </a>
         </div>
 
-        <div className="menu">
+        <div className="menu" onClick={menuOpen}>
          
-          <div className="dots">
+          <div className={dots == true ? 'dots close' : 'dots'} >
             {
                [...Array(n)].map((e, i) => <span key={i}></span>)
             }
@@ -41,7 +58,25 @@ let n = 9;
         <ProductSlider />
         <DownloadSection />
 
+
       </main>
+
+      <section className={menuBox == true ? 'menuBox active' : 'menuBox'}>
+        <ul>
+          {
+            menuItems.map((data, index) => {
+              return( 
+                <li key={index}><a href=""  >  {data}</a> </li>
+              )
+            })
+          }
+
+        </ul>
+
+        <div className="footer-icon">
+
+        </div>
+      </section>
     </section>
   );
 }
